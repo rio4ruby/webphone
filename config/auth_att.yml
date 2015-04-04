@@ -1,0 +1,35 @@
+# Mandatory parameter that should be set to the registered application's 
+# 'API Key' value.
+client_id: vey6fwmuyjialqzcemgw5w1zef2zykcu
+
+# Mandatory parameter that should be set to the registered application's
+# 'Secret Key' value.
+client_secret: dgmzdzvuujsohrgaksgslzcq5i8yuhju
+
+# Set the value as per your organizations domain for webrtc
+account_domain: '@kitatdot.net'
+
+# Fully Qualified Domain Name. Mandatory parameter that points to the location
+# of AT&T's API.
+fqdn:   'https://api.att.com'# Mandatory parameter that specifies the authorization redirect URL. This is
+# the URL that the consent flow will redirect to.
+consent_redirect: 'https://webphone.kitatdot.net/oauth/callback'
+
+# Valid e911 identifier that you have generated using the e911 api
+e911id: 'valid e911 id'
+
+# List of comma seperated vtn numbers created in your account
+vtn_numbers: ''
+
+# setup http sessions to use a provided secret
+session_secret: 'tHecruuuuuuuuuuuxOfthebIscuItisTheApostrophe'
+
+# Used to set links on production sample apps
+github_server_link: 'http://github.com'
+github_client_link: 'http://github.com'
+source_link: #
+download_link: #
+
+# Set this to use a proxy on the server side
+proxy: 
+

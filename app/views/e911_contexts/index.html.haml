@@ -1,0 +1,51 @@
+%h1 Listing e911_contexts
+
+%table
+  %thead
+    %tr
+      %th User
+      %th E911id
+      %th Name
+      %th Housenumber
+      %th Housenumext
+      %th Streetdir
+      %th Streetdirsuffix
+      %th Street
+      %th Streetnamesuffix
+      %th Unit
+      %th City
+      %th State
+      %th Zip
+      %th Addressadditional
+      %th Comments
+      %th Isaddressconfirmed
+      %th
+      %th
+      %th
+
+  %tbody
+    - @e911_contexts.each do |e911_context|
+      %tr
+        %td= e911_context.user
+        %td= e911_context.e911id
+        %td= e911_context.name
+        %td= e911_context.houseNumber
+        %td= e911_context.houseNumExt
+        %td= e911_context.streetDir
+        %td= e911_context.streetDirSuffix
+        %td= e911_context.street
+        %td= e911_context.streetNameSuffix
+        %td= e911_context.unit
+        %td= e911_context.city
+        %td= e911_context.state
+        %td= e911_context.zip
+        %td= e911_context.addressAdditional
+        %td= e911_context.comments
+        %td= e911_context.isAddressConfirmed
+        %td= link_to 'Show', e911_context
+        %td= link_to 'Edit', edit_e911_context_path(e911_context)
+        %td= link_to 'Destroy', e911_context, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New E911 context', new_e911_context_path

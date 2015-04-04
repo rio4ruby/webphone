@@ -1,0 +1,54 @@
+%p#notice= notice
+
+%p
+  %b User:
+  = @e911_context.user
+%p
+  %b E911id:
+  = @e911_context.e911id
+%p
+  %b Name:
+  = @e911_context.name
+%p
+  %b Housenumber:
+  = @e911_context.houseNumber
+%p
+  %b Housenumext:
+  = @e911_context.houseNumExt
+%p
+  %b Streetdir:
+  = @e911_context.streetDir
+%p
+  %b Streetdirsuffix:
+  = @e911_context.streetDirSuffix
+%p
+  %b Street:
+  = @e911_context.street
+%p
+  %b Streetnamesuffix:
+  = @e911_context.streetNameSuffix
+%p
+  %b Unit:
+  = @e911_context.unit
+%p
+  %b City:
+  = @e911_context.city
+%p
+  %b State:
+  = @e911_context.state
+%p
+  %b Zip:
+  = @e911_context.zip
+%p
+  %b Addressadditional:
+  = @e911_context.addressAdditional
+%p
+  %b Comments:
+  = @e911_context.comments
+%p
+  %b Isaddressconfirmed:
+  = @e911_context.isAddressConfirmed
+
+= link_to 'Edit', edit_e911_context_path(@e911_context)
+\|
+= link_to 'Back', e911_contexts_path

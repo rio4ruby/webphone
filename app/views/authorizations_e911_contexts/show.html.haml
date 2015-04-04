@@ -1,0 +1,12 @@
+%p#notice= notice
+
+%p
+  %b Authorization:
+  = @authorizations_e911_context.authorization
+%p
+  %b E911 context:
+  = @authorizations_e911_context.e911_context
+
+= link_to 'Edit', edit_authorizations_e911_context_path(@authorizations_e911_context)
+\|
+= link_to 'Back', authorizations_e911_contexts_path

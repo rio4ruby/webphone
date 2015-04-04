@@ -1,0 +1,22 @@
+.panel-group#accordion{ role: "tablist", 'aria-multiselectable': "true"}
+  .panel.panel-info
+    .panel-heading#headingOne{ role: "tab" }
+      %h4.panel-title
+        %a{'data-toggle': "collapse", 'data-parent': "#accordion", href: "#collapseOne", 'aria-expanded': "true", 'aria-controls': "collapseOne" }
+          Select E911
+    .panel-collapse#collapseOne.collapse.in{role: "tabpanel", 'aria-labelledby': "headingOne"}
+      .panel-body
+        = render :partial => 'authorizations_e911_contexts/form'
+  .panel.panel-info
+    .panel-heading#headingTwo{role: "tab"}
+      %h4.panel-title
+        %a.collapsed{'data-toggle': "collapse", 'data-parent': "#accordion", href: "#collapseTwo", 'aria-expanded': "false", 'aria-controls': "collapseTwo"}
+          Create New E911
+    .panel-collapse#collapseTwo.collapse{role: "tabpanel", 'aria-labelledby': "headingTwo"}
+      .panel-body
+        = render :partial => 'e911_contexts/form'
+
+
+
+
+

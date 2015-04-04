@@ -1,0 +1,13 @@
+%h1 Set E911
+
+- @contexts.each do |ctx|
+  %div.radio
+    %label
+      %input{type: 'radio', name: 'authContext', value: ctx.id.to_s, id: "context-#{ctx.id}"}
+        = "#{ctx.houseNumber} #{ctx.street} #{ctx.city} #{ctx.state} #{ctx.zip}"
+
+%button.btn.btn-primary{type: "submit"} Use selected E911 Context
+  
+
+
+

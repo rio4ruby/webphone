@@ -1,0 +1,76 @@
+html, body { height: 100% }
+.toparea {
+   min-height: 400px;
+}
+#accordion {
+   .panel-heading {
+      text-align: center;
+      padding: 0px;
+      h4.panel-title {
+         backgroound-color: yellow;
+         a {
+            text-decoration: none !important;
+            width: 100% !important;
+            line-height: 2;
+            display: inline-block;
+         }
+      }
+   }
+   form {
+      .form-button {
+         margin-top: 1em;
+         text-align: center;
+      }
+   }
+}
+.phone-btn {
+   text-align: left;
+   .glyphicon {
+      margin-right:0.5em;
+   }
+
+}
+/* .rightarea { */
+/*    .phone-button-area { */
+/*       height: 60px; */
+/*       background-color: brown; */
+/*    } */
+/*    .setuparea { */
+      
+/*       margin-top: 1em; */
+/*       border-radius: 10px; */
+/*       position: relative; */
+/*       height: 700px; */
+/*       min-height: 400px; */
+/*       -webkit-box-shadow: 0px 0px 4px 3px rgba(113,104,247,0.33); */
+/*       -moz-box-shadow: 0px 0px 4px 3px rgba(113,104,247,0.33); */
+/*       box-shadow: 0px 0px 4px 3px rgba(113,104,247,0.33); */
+      
+/*       .panel-heading { */
+/*          text-align: center; */
+/*          h4: { */
+/*             a: { */
+/*                background-color: red; */
+/*                display: inline-block; */
+/*             } */
+/*          } */
+/*       } */
+/*       .panel { */
+/*          margin-top: 1em; */
+/*       } */
+/*       .control-label { */
+/*          text-align: left; */
+/*       } */
+/*       label.control-label { */
+/*          margin-top: 2px; */
+/*          margin-bottom: 0px; */
+/*       font-size: 70%; */
+/*       } */
+/*    } */
+/* } */
+/* .auth-btn { */
+/* } */
+/* .auth-frame { */
+/*    height: 650px; */
+/* } */
+

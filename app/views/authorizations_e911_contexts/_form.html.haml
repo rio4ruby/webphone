@@ -1,0 +1,12 @@
+= form_for(@authorizations_e911_context) do |f|
+  -# = f.error_notification
+
+  = f.hidden_field :authorization_id
+
+  - @contexts.each do |ctx|
+    .radio
+      %label
+        = f.radio_button(:e911_context_id, ctx.id.to_s)
+        #{ctx.houseNumber} #{ctx.street} #{ctx.city} #{ctx.state} #{ctx.zip}
+
+  = f.submit("Use selected E911 Context", class: 'btn btn-primary')

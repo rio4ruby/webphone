@@ -9,18 +9,21 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 group :development, :test do
   gem 'byebug'
-  gem 'web-console', '~> 2.0'
+  #gem 'web-console', '~> 2.0'
   gem 'spring'
 end
 gem 'bootstrap-sass'
 gem 'devise'
 gem 'haml-rails'
-gem 'high_voltage'
+#gem 'high_voltage'
 gem 'pg'
 gem 'pundit'
 gem 'simple_form'
 gem 'therubyracer', :platform=>:ruby
 gem 'upmin-admin'
+
+gem 'rest-client'
+
 group :development do
   gem 'better_errors'
   gem 'capistrano', '~> 3.0.1'

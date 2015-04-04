@@ -1,0 +1,13 @@
+.toparea.container-fluid
+  .row
+    .leftarea.col-md-9
+      %h1 Main Page
+    
+    .rightarea.col-md-3
+      .phone-button-area
+        = render partial: 'phone_button'
+      .setuparea
+        - if @auth.authorized?
+          -  unless @auth.has_e911id?
+            = render partial: 'e911_setup'
+

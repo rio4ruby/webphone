@@ -1,0 +1,23 @@
+%h1 Listing authorizations_e911_contexts
+
+%table
+  %thead
+    %tr
+      %th Authorization
+      %th E911 context
+      %th
+      %th
+      %th
+
+  %tbody
+    - @authorizations_e911_contexts.each do |authorizations_e911_context|
+      %tr
+        %td= authorizations_e911_context.authorization
+        %td= authorizations_e911_context.e911_context
+        %td= link_to 'Show', authorizations_e911_context
+        %td= link_to 'Edit', edit_authorizations_e911_context_path(authorizations_e911_context)
+        %td= link_to 'Destroy', authorizations_e911_context, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Authorizations e911 context', new_authorizations_e911_context_path

@@ -1,0 +1,23 @@
+%form{action: authorization_path(@auth.id), method: :put}
+  .form-group-sm
+    %label.control-label{for: "ctx-name"} Name
+    %input#ctx-name.form-control{ placeholder: 'Name'}
+  .form-group-sm
+    %label.control-label{for: "ctx-house-number"} House Number
+    %input#ctx-house-number.form-control{ placeholder: 'House Number'}
+  .form-group-sm
+    %label.control-label{for: "ctx-street"} Street
+    %input#ctx-street.form-control{ placeholder: 'Street'}
+  .form-group-sm
+    %label.control-label{for: "ctx-city"} City
+    %input#ctx-city.form-control{ placeholder: 'City'}
+  .form-group-sm
+    %label.control-label{for: "ctx-state"} State
+    %input#ctx-state.form-control{ placeholder: 'State'}
+  .form-group-sm
+    %label.control-label{for: "ctx-zip"} Zip
+    %input#ctx-zip.form-control{ placeholder: 'Zip'}
+
+  .form-button
+    %button.btn.btn-primary{type: "submit"} Create New E911 Context
+  

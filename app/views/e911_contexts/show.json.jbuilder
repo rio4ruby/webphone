@@ -1,0 +1,1 @@
+json.extract! @e911_context, :id, :user_id, :e911id, :name, :houseNumber, :houseNumExt, :streetDir, :streetDirSuffix, :street, :streetNameSuffix, :unit, :city, :state, :zip, :addressAdditional, :comments, :isAddressConfirmed, :created_at, :updated_at

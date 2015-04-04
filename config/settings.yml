@@ -1,0 +1,23 @@
+development:
+  auth_att:
+    scope: "WEBRTCMOBILE EMERGENCYSERVICES WEBRTC"
+    #scope: "WEBRTCMOBILE"
+    client_id: vey6fwmuyjialqzcemgw5w1zef2zykcu
+    client_secret: dgmzdzvuujsohrgaksgslzcq5i8yuhju
+    account_domain: '@kitatdot.net'
+    fqdn:   'https://api.att.com'
+    redirect_uri: 'https://webphone.kitatdot.net/oauth/callback'
+    e911id: 'valid e911 id'
+    vtn_numbers: ''
+production:
+  auth_att:
+    client_id: vey6fwmuyjialqzcemgw5w1zef2zykcu
+    client_secret: dgmzdzvuujsohrgaksgslzcq5i8yuhju
+    account_domain: '@kitatdot.net'
+    fqdn:   'https://api.att.com'
+    redirect_uri: 'https://webphone.kitatdot.net/oauth/callback'
+    scope: 'webrtcmobile'
+    E911ID: 'valid e911 id'
+    vtn_numbers: ''
+
+

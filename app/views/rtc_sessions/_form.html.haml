@@ -1,0 +1,10 @@
+= simple_form_for(@rtc_session) do |f|
+  = f.error_notification
+
+  .form-inputs
+    = f.association :user
+    = f.input :sessionId
+    = f.input :started_at
+
+  .form-actions
+    = f.button :submit

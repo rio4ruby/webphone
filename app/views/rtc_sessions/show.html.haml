@@ -1,0 +1,15 @@
+%p#notice= notice
+
+%p
+  %b User:
+  = @rtc_session.user
+%p
+  %b Sessionid:
+  = @rtc_session.sessionId
+%p
+  %b Started at:
+  = @rtc_session.started_at
+
+= link_to 'Edit', edit_rtc_session_path(@rtc_session)
+\|
+= link_to 'Back', rtc_sessions_path

@@ -1,0 +1,12 @@
+= simple_form_for(@authorization) do |f|
+  = f.error_notification
+
+  .form-inputs
+    = f.input :user
+    = f.input :carrier
+    = f.input :access_token
+    = f.input :refresh_token
+    = f.input :expires_in
+
+  .form-actions
+    = f.button :submit

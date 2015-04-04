@@ -1,0 +1,10 @@
+= form_tag do
+  - @contexts.each do |ctx|
+    = radio_button_tag(:ctx, ctx.id.to_s)
+    = label_tag("ctx_#{ctx.id}".to_sym, "#{ctx.houseNumber} #{ctx.street} #{ctx.city} #{ctx.state} #{ctx.zip}")
+  = submit_tag("Use selected E911 Context")
+
+  
+
+
+

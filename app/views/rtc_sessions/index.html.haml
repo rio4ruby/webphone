@@ -1,0 +1,25 @@
+%h1 Listing rtc_sessions
+
+%table
+  %thead
+    %tr
+      %th User
+      %th Sessionid
+      %th Started at
+      %th
+      %th
+      %th
+
+  %tbody
+    - @rtc_sessions.each do |rtc_session|
+      %tr
+        %td= rtc_session.user
+        %td= rtc_session.sessionId
+        %td= rtc_session.started_at
+        %td= link_to 'Show', rtc_session
+        %td= link_to 'Edit', edit_rtc_session_path(rtc_session)
+        %td= link_to 'Destroy', rtc_session, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New RTC session', new_rtc_session_path
